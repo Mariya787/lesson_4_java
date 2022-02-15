@@ -1,3 +1,6 @@
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 public class Person {
 
     private String firstName;
@@ -51,7 +54,9 @@ public class Person {
     }
 
     public int getYearOfBirth() {
-        return (2022 - age);
+        Calendar dt = new GregorianCalendar();
+        int year = dt.get(Calendar.YEAR);
+        return (year - age);
     }
 
     @Override

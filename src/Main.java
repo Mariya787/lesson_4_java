@@ -11,7 +11,5 @@ public class Main {
         person1.printName();
 
         System.out.println(person2 + ", " + person2.getYearOfBirth() + " г.р.");
-
     }
-
 }
