@@ -51,7 +51,7 @@ public class Person {
     }
 
     public int getYearOfBirth() {
-        return (2022-age);
+        return (2022 - age);
     }
 
     @Override
