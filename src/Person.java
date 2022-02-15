@@ -3,9 +3,9 @@ public class Person {
     private String firstName;
     private String middleName;
     private String lastName;
-    private Integer age;
+    private int age;
 
-    public Person(String firstName, String middleName, String lastName, Integer age) {
+    public Person(String firstName, String middleName, String lastName, int age) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -42,12 +42,16 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(int age) {
         this.age = age;
+    }
+
+    public int getYearOfBirth() {
+        return (2022-age);
     }
 
     @Override
